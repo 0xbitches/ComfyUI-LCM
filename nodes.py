@@ -109,6 +109,8 @@ class LCM_img2img_Sampler:
         if self.pipe is None:
             self.pipe = LatentConsistencyModelImg2ImgPipeline.from_pretrained(
                 pretrained_model_name_or_path="SimianLuo/LCM_Dreamshaper_v7",
+                custom_revision="main",
+                revision="fb9c5d",
                 safety_checker=None,
             )
 
